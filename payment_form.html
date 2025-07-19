@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" target="_blank">
+            <h1>Payment Form</h1>
+            <hr>
+            <!-- <p>Required Fields are Followed by *</p> -->
+            <h2>User Information</h2>
+            <p>Name: *<input type="text" name="Name" placeholder="Enter Your Name" required></p>
+            <fieldset>
+                <legend>Gender *</legend>
+                <p>
+                Male <input type="radio" name="gender" id="Male" required>
+                Female <input type="radio" name="gender" id="Female" required>
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="address" id="address" cols="100" rows="7" placeholder="Enter Your Address"></textarea></p>
+            <p>Email: *<input type="email" name="email" id="email" placeholder="user@gmail.com" required></p>
+            <P>Pincode: *<input type="text" name="number" id="number" placeholder="123456" required></P>
+            <hr>
+            <h2>Payment Information</h2>
+            <h4 style="margin-bottom: 0px;">Accepted Cards</h4>
+            <i class="fa fa-cc-visa" style="font-size:48px;color:navy"></i> 
+            <i class="fa fa-cc-amex" style="font-size:48px;color:blue"></i>
+            <i class="fa fa-cc-mastercard" style="font-size:48px;color:red"></i>
+            <i class="fa fa-cc-paypal" style="font-size:48px;color:yellow"></i>
+            <br>
+            <p>Card Type: *
+                <select name="card_type" id="card_type" required>
+                    <option value="">--Select a Card Type--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Rupay">Rupay</option>
+                </select>     
+            </p>
+            <p>
+                Card number *<input type="text" name="number" id="number" placeholder="1111-2222-3333-4444" required>
+            </p>
+            <p>
+                Expiration Date *<input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                CVV *<input type="password" name="cvv" id="cvv" placeholder="123" required>
+            </p>
+            <input type="submit" value="Pay Now">
+
+        </form>
+    </div>    
+</body>
+</html>
